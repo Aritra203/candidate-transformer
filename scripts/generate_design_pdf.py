@@ -160,5 +160,11 @@ def generate_pdf(output_path: Path):
 
 if __name__ == "__main__":
     out_dir = Path(__file__).parent.parent
-    out_pdf = out_dir / "Aritra_Victus_aritra_victus_Eightfold.pdf"
-    generate_pdf(out_pdf)
+    
+    # Generate for workspace system user name
+    out_pdf_victus = out_dir / "Aritra_Victus_aritra_victus_Eightfold.pdf"
+    generate_pdf(out_pdf_victus)
+    
+    # Generate for candidate parsed resume name
+    out_pdf_konar = out_dir / "Aritra_Konar_konararitra72@gmail.com_Eightfold.pdf"
+    generate_pdf(out_pdf_konar)

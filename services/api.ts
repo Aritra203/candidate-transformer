@@ -106,6 +106,13 @@ export const apiService = {
   },
 
   /**
+   * Returns the direct URL to download the design PDF.
+   */
+  getDesignDownloadUrl(type: 'konar' | 'victus' = 'konar'): string {
+    return `${API_BASE_URL}/api/download-design?type=${type}`;
+  },
+
+  /**
    * Downloads output JSON content directly.
    */
   async downloadOutput(): Promise<Blob> {

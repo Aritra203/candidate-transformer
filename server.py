@@ -229,6 +229,25 @@ async def download_output():
         media_type="application/json"
     )
 
+@app.get("/api/download-design")
+async def download_design(type: str = "konar"):
+    """Serve the generated design document PDF."""
+    if type == "victus":
+        path = Path("Aritra_Victus_aritra_victus_Eightfold.pdf")
+    else:
+        path = Path("Aritra_Konar_konararitra72@gmail.com_Eightfold.pdf")
+        
+    if not path.exists():
+        raise HTTPException(
+            status_code=404,
+            detail=f"Design PDF '{path.name}' not found. Run generate_design_pdf.py first."
+        )
+    return FileResponse(
+        path=path,
+        filename=path.name,
+        media_type="application/pdf"
+    )
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("server:app", host="127.0.0.1", port=8000, reload=True)

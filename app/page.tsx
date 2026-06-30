@@ -14,9 +14,11 @@ import LogsPanel from '../components/LogsPanel';
 import CandidateCard from '../components/CandidateCard';
 import EmptyState from '../components/EmptyState';
 import LoadingOverlay from '../components/LoadingOverlay';
+import { apiService } from '../services/api';
 
 import { 
   FileText, 
+  Download,
   UploadCloud, 
   Settings, 
   Play, 
@@ -396,7 +398,42 @@ function DashboardContent() {
                   </p>
                 </div>
 
-                <div className="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl p-6 space-y-6 text-sm text-slate-700 dark:text-slate-300 leading-relaxed shadow-sm">
+                {/* PDF Design Document Download Card */}
+                <div className="bg-card border border-border rounded-xl p-6 shadow-sm space-y-4">
+                  <h2 className="text-sm font-semibold text-foreground flex items-center gap-2">
+                    <FileText className="h-5 w-5 text-indigo-500" />
+                    <span>Technical Design One-Pager (PDF Deliverable)</span>
+                  </h2>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    A staff-engineer-level technical design document has been compiled and saved to the project root. 
+                    <strong className="text-indigo-550 dark:text-indigo-400 block mt-1">
+                      ⚠️ Note: Opening the PDF binary file in the code editor displays raw PDF bytes. 
+                      Please use the buttons below to download and view the formatted design document PDF directly in your browser or system PDF viewer.
+                    </strong>
+                  </p>
+                  <div className="flex flex-wrap gap-3">
+                    <a
+                      href={apiService.getDesignDownloadUrl('konar')}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4.5 py-2.5 bg-primary text-primary-foreground rounded-xl text-xs font-bold hover:bg-primary/95 transition-all cursor-pointer shadow-sm animate-in fade-in"
+                    >
+                      <Download className="h-4 w-4" />
+                      <span>Download PDF (Candidate Name format)</span>
+                    </a>
+                    <a
+                      href={apiService.getDesignDownloadUrl('victus')}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4.5 py-2.5 bg-muted border border-border text-foreground rounded-xl text-xs font-bold hover:bg-muted/80 transition-all cursor-pointer shadow-sm animate-in fade-in"
+                    >
+                      <Download className="h-4 w-4" />
+                      <span>Download PDF (System User format)</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div className="bg-card border border-border rounded-xl p-6 space-y-6 text-sm text-slate-700 dark:text-slate-350 leading-relaxed shadow-sm">
                   <div>
                     <h3 className="text-base font-bold text-slate-900 dark:text-white mb-2">
                       Layered Data Pipeline Architecture
