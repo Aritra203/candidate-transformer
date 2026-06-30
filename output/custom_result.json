@@ -1,0 +1,27 @@
+[
+  {
+    "full_name": "Priya Sharma",
+    "primary_email": "priya.sharma@email.com",
+    "phone": "+14155551234",
+    "country": "US",
+    "skills": [
+      "Agile",
+      "AWS",
+      "CI/CD",
+      "Docker",
+      "Git",
+      "GraphQL",
+      "JavaScript",
+      "Kubernetes",
+      "MongoDB",
+      "Node.js",
+      "PostgreSQL",
+      "Python",
+      "React",
+      "REST",
+      "Scrum",
+      "TypeScript"
+    ],
+    "overall_confidence": 0.8742
+  }
+]

@@ -1,0 +1,402 @@
+{
+  "candidate_id": "7e1deb1b5c6f2d7608108ee8e7f30685b6c40db039b239a631c0b68aa2d7e360",
+  "full_name": "Priya Sharma",
+  "emails": [
+    "priya.sharma@email.com",
+    "p.sharma@company.org"
+  ],
+  "phones": [
+    "+14155551234"
+  ],
+  "location": {
+    "city": "San Francisco",
+    "region": "CA",
+    "country": "US"
+  },
+  "links": {
+    "linkedin": "https://linkedin.com/in/priyasharma",
+    "github": "https://github.com/priyasharma",
+    "portfolio": "https://priyasharma.dev",
+    "other": []
+  },
+  "headline": "Senior Software Engineer",
+  "years_experience": 6.0,
+  "skills": [
+    {
+      "name": "Agile",
+      "confidence": 0.828,
+      "sources": [
+        "resume.pdf"
+      ]
+    },
+    {
+      "name": "AWS",
+      "confidence": 0.884,
+      "sources": [
+        "resume.pdf",
+        "candidate.csv"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "confidence": 0.828,
+      "sources": [
+        "resume.pdf"
+      ]
+    },
+    {
+      "name": "Docker",
+      "confidence": 0.884,
+      "sources": [
+        "resume.pdf",
+        "candidate.csv"
+      ]
+    },
+    {
+      "name": "Git",
+      "confidence": 0.828,
+      "sources": [
+        "resume.pdf"
+      ]
+    },
+    {
+      "name": "GraphQL",
+      "confidence": 0.828,
+      "sources": [
+        "resume.pdf"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "confidence": 0.828,
+      "sources": [
+        "resume.pdf"
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "confidence": 0.884,
+      "sources": [
+        "resume.pdf",
+        "candidate.csv"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "confidence": 0.828,
+      "sources": [
+        "resume.pdf"
+      ]
+    },
+    {
+      "name": "Node.js",
+      "confidence": 0.828,
+      "sources": [
+        "resume.pdf"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "confidence": 0.884,
+      "sources": [
+        "resume.pdf",
+        "candidate.csv"
+      ]
+    },
+    {
+      "name": "Python",
+      "confidence": 0.884,
+      "sources": [
+        "resume.pdf",
+        "candidate.csv"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": 0.884,
+      "sources": [
+        "resume.pdf",
+        "candidate.csv"
+      ]
+    },
+    {
+      "name": "REST",
+      "confidence": 0.884,
+      "sources": [
+        "resume.pdf",
+        "candidate.csv"
+      ]
+    },
+    {
+      "name": "Scrum",
+      "confidence": 0.828,
+      "sources": [
+        "resume.pdf"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "confidence": 0.884,
+      "sources": [
+        "resume.pdf",
+        "candidate.csv"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Stripe",
+      "title": "Senior Software Engineer",
+      "start": "2021-01",
+      "end": null,
+      "summary": "Designed and built real-time payment processing pipeline handling Led migration from monolith to microservices architecture Mentored team of 4 junior engineers"
+    },
+    {
+      "company": "Datadog",
+      "title": "Software Engineer",
+      "start": "2019-03",
+      "end": "2020-12",
+      "summary": "Built customer-facing dashboards using React and TypeScript Implemented distributed tracing backend in Go and Python Reduced p99 latency by 40% through query optimization"
+    },
+    {
+      "company": "Acme Corp",
+      "title": "Junior Developer",
+      "start": "2017-06",
+      "end": "2019-02",
+      "summary": "Developed RESTful APIs using Django and Flask Maintained CI/CD pipelines with Jenkins and Docker"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Stanford University",
+      "degree": "Master of Science in Computer Science",
+      "field": null,
+      "end_year": "2017"
+    },
+    {
+      "institution": "IIT Bombay",
+      "degree": "Bachelor of Technology in Information Technology",
+      "field": null,
+      "end_year": "2015"
+    }
+  ],
+  "overall_confidence": 0.8742,
+  "provenance": [
+    {
+      "field": "emails",
+      "source": "resume.pdf",
+      "method": "regex",
+      "confidence": 0.874
+    },
+    {
+      "field": "phones",
+      "source": "resume.pdf",
+      "method": "regex+phonenumbers",
+      "confidence": 0.874
+    },
+    {
+      "field": "links.linkedin",
+      "source": "resume.pdf",
+      "method": "regex",
+      "confidence": 0.874
+    },
+    {
+      "field": "links.github",
+      "source": "resume.pdf",
+      "method": "regex",
+      "confidence": 0.874
+    },
+    {
+      "field": "links.portfolio",
+      "source": "resume.pdf",
+      "method": "regex",
+      "confidence": 0.874
+    },
+    {
+      "field": "full_name",
+      "source": "resume.pdf",
+      "method": "section_heuristic",
+      "confidence": 0.828
+    },
+    {
+      "field": "skills",
+      "source": "resume.pdf",
+      "method": "section_heuristic",
+      "confidence": 0.828
+    },
+    {
+      "field": "experience",
+      "source": "resume.pdf",
+      "method": "section_heuristic",
+      "confidence": 0.828
+    },
+    {
+      "field": "education",
+      "source": "resume.pdf",
+      "method": "section_heuristic",
+      "confidence": 0.828
+    },
+    {
+      "field": "summary",
+      "source": "resume.pdf",
+      "method": "section_heuristic",
+      "confidence": 0.828
+    },
+    {
+      "field": "years_experience",
+      "source": "resume.pdf",
+      "method": "regex",
+      "confidence": 0.874
+    },
+    {
+      "field": "location.city",
+      "source": "resume.pdf",
+      "method": "regex",
+      "confidence": 0.874
+    },
+    {
+      "field": "location.region",
+      "source": "resume.pdf",
+      "method": "regex",
+      "confidence": 0.874
+    },
+    {
+      "field": "full_name",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "emails",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "phones",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "location.city",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "location.region",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "location.country",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "links.linkedin",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "links.github",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "headline",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "current_company",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "years_experience",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "skills",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "full_name",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "emails",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "phones",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "location.city",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "location.region",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "location.country",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "links.linkedin",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "headline",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "current_company",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "years_experience",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    },
+    {
+      "field": "skills",
+      "source": "candidate.csv",
+      "method": "structured_field",
+      "confidence": 0.84
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+full_name,email,phone,city,region,country,current_title,current_company,years_experience,skills,linkedin,github
+Priya Sharma,priya.sharma@email.com,+14155551234,San Francisco,California,United States,Senior Software Engineer,Stripe,6,"Python, React, PostgreSQL, AWS, Docker, Kubernetes, REST, TypeScript",https://linkedin.com/in/priyasharma,https://github.com/priyasharma
+Priya Sharma,p.sharma@company.org,(415) 555-1234,SF,CA,US,Sr. Software Engineer,Stripe,6,"Python, ReactJS, Postgres, Amazon Web Services, Docker",https://linkedin.com/in/priyasharma,
