@@ -34,6 +34,15 @@ app.add_middleware(
 UPLOAD_DIR = Path("uploads")
 UPLOAD_DIR.mkdir(exist_ok=True)
 
+@app.get("/")
+async def read_root():
+    """Health check endpoint to verify API status."""
+    return {
+        "status": "healthy",
+        "name": "Multi-Source Candidate Data Transformer API",
+        "docs": "/docs"
+    }
+
 class TransformRequest(BaseModel):
     csv_path: Optional[str] = None
     resume_path: Optional[str] = None
